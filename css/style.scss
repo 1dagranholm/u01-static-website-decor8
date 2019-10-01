@@ -1,55 +1,55 @@
-/*** VARIABLE FONTS ***/
-$font_family_1: "Roboto", sans-serif;
+/// VARIABLE FONTS 
+$font_roboto: "Roboto", sans-serif;
 
-/*** COLORS ***/
-/* VARIABLE FONT COLORS*/
-$color_1: #233c33;
-$color_2: #071712;
-$color_3: #ffffff;
-$color_4: #000000;
-$color_5: #316553;
-$color_8: #5f8275;
-$color_9: #93cdb9;
+/// COLORS
+/// VARIABLE FONT COLORS
+$c-dgreen: #233c33;
+$c-blackgreen: #071712;
+$c-white: #ffffff;
+$c-black: #000000;
+$c-green: #316553;
+$c-lgreen: #5f8275;
+$c-llgreen: #93cdb9;
 
-/*** VARIABLE BACKGROUND COLORS ***/
-/* Lightest grey, almost white */
-$background_color_1: #e8e8e8;
+/// VARIABLE BACKGROUND COLORS 
+/// Lightest grey, almost white
+$b_dgreen: #e8e8e8;
 
-/* White */
-$background_color_2: #ffffff;
+/// White
+$b_blackgreen: #ffffff;
 
-/* Light green */
-$background_color_3: rgb(220, 235, 231);
+/// Light green
+$b_white: rgb(220, 235, 231);
 
-/* Dark green */
-$background_color_4: #233c33;
+/// Dark green
+$b-black: #233c33;
 
-/* Light grey */
-$background_color_5: #e6e6e6;
+/// Light grey
+$b-green: #e6e6e6;
 
-/* Dark grey */
-$background_color_6: #595959;
+/// Dark grey
+$b-dgrey: #595959;
 
-/* Orange */
-$background_color_7: #f2bd85;
+/// Orange
+$b-orange: #f2bd85;
 
-/* Light blue */
-$background_color_8: #e1edf7;
+/// Light blue
+$b-lgreen: #e1edf7;
 
-/* Light, highligter green */
-$background_color_9: rgb(177, 232, 214);
+/// Light, highligter green
+$b-llgreen: rgb(177, 232, 214);
 
-/* Dark green, almost black */
-$background_color_10: #071712;
+/// Dark green, almost black
+$b_dgreenblack: #091d17;
 
-/* White with opacity */
-$background_color_11: rgba(255, 255, 255, 0.8);
+/// White with opacity
+$b_white-o: rgba(255, 255, 255, 0.8);
 
-/* Green */
-$background_color_13: #316553;
+/// Green
+$b_green: #316553;
 
-/* Black */
-$background_color_14: #000000;
+/// Black
+$b_black: #000000;
 
 /*** MAIN DEFAULT SETTINGS ***/
 /* Re-set boxmodel */
@@ -95,8 +95,8 @@ aside {
 footer {
   display: block;
   width: 100%;
-  background-color: $background_color_14;
-  color: $color_3;
+  background-color: $b_black;
+  color: $c-white;
   padding: 25px;
 }
 
@@ -120,15 +120,15 @@ html {
   height: 100%;
   line-height: 1.5;
   font-size: 10px;
-  font-family: $font_family_1;
+  font-family: $font_roboto;
 }
 
 body {
   height: 100%;
   line-height: 1.5;
   font-size: 10px;
-  font-family: $font_family_1;
-  background-color: $background_color_1;
+  font-family: $font_roboto;
+  background-color: $b_dgreen;
 }
 
 .page {
@@ -174,9 +174,9 @@ p {
 a {
   font-size: 1.6rem;
   font-weight: 900;
-  color: $color_1;
+  color: $c-dgreen;
   &:hover {
-    color: $color_2;
+    color: $c-blackgreen;
   }
 }
 
@@ -249,33 +249,33 @@ a {
 
 /*** COLOR PLATES ***/
 .white-back {
-  background-color: $background_color_2;
+  background-color: $b_blackgreen;
 }
 
 .lgreen-back {
-  background-color: $background_color_3;
+  background-color: $b_white;
 }
 
 .dgreen-back {
-  background-color: $background_color_4;
-  color: $color_3;
+  background-color: $b-black;
+  color: $c-white;
 }
 
 .lgrey-back {
-  background-color: $background_color_5;
+  background-color: $b-green;
 }
 
 .orange-back {
-  background-color: $background_color_7;
+  background-color: $b-orange;
 }
 
 .lblue-back {
-  background-color: $background_color_8;
+  background-color: $b-lgreen;
 }
 
 .blackgreen-back {
-  background-color: $background_color_10;
-  color: $color_3;
+  background-color: $b_dgreenblack;
+  color: $c-white;
 }
 
 #top-section {
@@ -301,16 +301,16 @@ a {
 .ondark {
   > a {
     &:hover {
-      color: $color_3;
+      color: $c-white;
     }
   }
 }
 
 .on-dark {
-  color: $color_3;
+  color: $c-white;
   > a {
     &:hover {
-      color: $color_3;
+      color: $c-white;
     }
   }
 }
@@ -322,10 +322,10 @@ a {
 
 /* Hightligt text, marker pen style */
 .marker {
-  background-color: $background_color_9;
+  background-color: $b-llgreen;
   display: inline;
   padding: 5px;
-  color: $color_4;
+  color: $c-black;
 }
 
 /*** FILES TO EMBED, RESPONSIVE ***/
@@ -346,7 +346,7 @@ iframe {
 /* Images inserted through CSS */
 #hero-image {
   background-image: url("../files/images/hero-image.jpg");
-  background-color: $background_color_9;
+  background-color: $b-llgreen;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -355,7 +355,7 @@ iframe {
 #wall-back {
   overflow: hidden;
   background-image: url("../files/images/bharath-g-s-aLGiPJ4XRO4-unsplash.jpg");
-  background-color: $background_color_7;
+  background-color: $b-orange;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -374,46 +374,46 @@ iframe {
 /* Default button styling */
 .button {
   > a {
-    background-color: $background_color_11;
+    background-color: $b_white-o;
     border: none;
-    color: $color_5;
+    color: $c-green;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-family: $font_family_1;
+    font-family: $font_roboto;
     font-size: 16px;
     font-weight: 900;
     text-decoration: none;
     &:link {
-      background-color: $background_color_11;
+      background-color: $b_white-o;
       border: none;
-      color: $color_5;
+      color: $c-green;
       padding: 15px 32px;
       text-align: center;
       text-decoration: none;
       display: inline-block;
-      font-family: $font_family_1;
+      font-family: $font_roboto;
       font-size: 16px;
       font-weight: 900;
       text-decoration: none;
     }
     &:visited {
-      background-color: $background_color_11;
+      background-color: $b_white-o;
       border: none;
-      color: $color_5;
+      color: $c-green;
       padding: 15px 32px;
       text-align: center;
       text-decoration: none;
       display: inline-block;
-      font-family: $font_family_1;
+      font-family: $font_roboto;
       font-size: 16px;
       font-weight: 900;
       text-decoration: none;
     }
     &:hover {
-      background-color: $background_color_13;
-      color: $color_3;
+      background-color: $b_green;
+      color: $c-white;
     }
   }
 }
@@ -445,8 +445,8 @@ i {
   padding: 0.25em;
   width: 80px;
   height: 80px;
-  background-color: $background_color_11;
-  color: $color_2;
+  background-color: $b_white-o;
+  color: $c-blackgreen;
   box-shadow: 1px 1px 5px #505050;
   > a {
     &:link {
@@ -474,7 +474,7 @@ i {
   > li {
     > p {
       font-size: 1.2rem;
-      color: $color_9;
+      color: $c-llgreen;
       margin-bottom: 0px;
     }
     margin: 10px;
