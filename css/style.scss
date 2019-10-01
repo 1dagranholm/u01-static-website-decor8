@@ -227,9 +227,14 @@ a {
   margin: 10px;
 }
 
+/* Add margin 20px*/
+.make-space20 {
+    margin: 20px;
+}
+
 /* Add margin 20px to bottom */
 .make-space20b {
-  margin: 20px;
+  margin-bottom: 20px;
 }
 
 /* Smaller margins at bottom */
@@ -611,6 +616,10 @@ i {
     height: 225px;
   }
 
+  iframe {
+      border: 0;
+  }
+
   #brochure {
     width: 410px;
     height: 600px;
@@ -649,8 +658,7 @@ i {
   }
 
   #video {
-    width: 560px;
-    height: 315px;
+    width: 920px;
   }
 
   #brochure {

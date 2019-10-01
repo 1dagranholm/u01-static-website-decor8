@@ -228,9 +228,14 @@ a:hover {
   margin: 10px;
 }
 
+/* Add margin 20px*/
+.make-space20 {
+  margin: 20px;
+}
+
 /* Add margin 20px to bottom */
 .make-space20b {
-  margin: 20px;
+  margin-bottom: 20px;
 }
 
 /* Smaller margins at bottom */
@@ -585,7 +590,6 @@ i {
   }
   #video {
     width: 320px;
-    height: 180px;
   }
   #copyright {
     display: -webkit-box;
@@ -659,8 +663,8 @@ i {
   }
   #video {
     width: 410px;
-    height: 225px;
   }
+
   #brochure {
     width: 410px;
     height: 600px;
@@ -701,8 +705,7 @@ i {
     height: 200px;
   }
   #video {
-    width: 560px;
-    height: 315px;
+    width: 920px;
   }
   #brochure {
     width: 410px;
