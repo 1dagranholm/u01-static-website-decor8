@@ -22,7 +22,7 @@ $b_blackgreen: #ffffff;
 $b_white: rgb(220, 235, 231);
 
 /// Dark green
-$b-black: #233c33;
+$b-dgreen: #233c33;
 
 /// Light grey
 $b-green: #e6e6e6;
@@ -51,15 +51,15 @@ $b_green: #316553;
 /// Black
 $b_black: #000000;
 
-/*** MAIN DEFAULT SETTINGS ***/
-/* Re-set boxmodel */
+/// MAIN DEFAULT SETTINGS **///
+/// Re-set boxmodel ///
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Clearfix */
+/// Clearfix ///
 .clearfix {
   &:before {
     content: " ";
@@ -76,7 +76,7 @@ $b_black: #000000;
   }
 }
 
-/* Default settings for blocks + fix to support HTML5 for older browsers */
+/// Default settings for blocks + fix to support HTML5 for older browsers ///
 section {
   display: block;
   width: 100%;
@@ -115,7 +115,7 @@ nav {
   display: block;
 }
 
-/* Main settings */
+/// Main settings ///
 html {
   height: 100%;
   line-height: 1.5;
@@ -137,7 +137,7 @@ body {
   flex-wrap: wrap;
 }
 
-/* Font-sizes & font-weights, and default padding/margins */
+/// Font-sizes & font-weights, and default padding/margins ///
 h1 {
   font-size: 4rem;
 }
@@ -180,7 +180,7 @@ a {
   }
 }
 
-/* Top menu styling */
+/// Top menu styling ///
 .topmenu-logo {
   width: 300px;
 }
@@ -189,65 +189,65 @@ a {
   display: flex;
 }
 
-/*** FLEXBOX STYLING ***/
-/* Make a row */
+///** FLEXBOX STYLING **///
+/// Make a row ///
 .make-row {
   display: flex;
   flex-flow: row;
   align-content: space-around;
 }
 
-/* Make a column */
+/// Make a column ///
 .make-col {
   display: flex;
   flex-flow: column;
   justify-content: space-between;
 }
 
-/* Center the content */
+/// Center the content ///
 .make-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* Center the text */
+/// Center the text ///
 .center-text {
   text-align: center;
 }
 
-/* Let the content wrap */
+/// Let the content wrap ///
 .make-wrap {
   display: flex;
   flex-flow: wrap;
 }
 
-/* Add margin 10px */
+/// Add margin 10px ///
 .make-space10 {
   margin: 10px;
 }
 
-/* Add margin 20px*/
+/// Add margin 20px///
 .make-space20 {
     margin: 20px;
 }
 
-/* Add margin 20px to bottom */
+/// Add margin 20px to bottom ///
 .make-space20b {
   margin-bottom: 20px;
 }
 
-/* Smaller margins at bottom */
+/// Smaller margins at bottom ///
 .remove-space {
   margin-bottom: 5px;
 }
 
-/* Add 20px margins up & down */
+/// Add 20px margins up & down ///
 .make-ma20tb {
   margin: 20px 0px 20px 0px;
 }
 
-/*** COLOR PLATES ***/
+///** COLOR PLATES **///
 .white-back {
   background-color: $b_blackgreen;
 }
@@ -257,7 +257,7 @@ a {
 }
 
 .dgreen-back {
-  background-color: $b-black;
+  background-color: $b-dgreen;
   color: $c-white;
 }
 
@@ -282,8 +282,8 @@ a {
   background-image: linear-gradient(#0a1c16, #162822);
 }
 
-/*** TEXT STYLINGS, EFFECTS ***/
-/* Remove bulletins form lists */
+///** TEXT STYLINGS, EFFECTS **///
+/// Remove bulletins form lists ///
 .big-h1 {
   text-transform: uppercase;
   align-content: center;
@@ -297,7 +297,7 @@ a {
   list-style-type: none;
 }
 
-/* Text color, when on dark color plates */
+/// Text color, when on dark color plates ///
 .ondark {
   > a {
     &:hover {
@@ -315,12 +315,16 @@ a {
   }
 }
 
-/* Shadow below text */
+.greentext {
+    color: $c-green;
+}
+
+/// Shadow below text ///
 .shadow {
   text-shadow: 1px 1px 5px #000000;
 }
 
-/* Hightligt text, marker pen style */
+/// Hightligt text, marker pen style ///
 .marker {
   background-color: $b-llgreen;
   display: inline;
@@ -328,22 +332,22 @@ a {
   color: $c-black;
 }
 
-/*** FILES TO EMBED, RESPONSIVE ***/
-/* Overall style, spacing */
+///** FILES TO EMBED, RESPONSIVE **///
+/// Overall style, spacing ///
 object {
   margin: 20px 0px 20px 0px;
 }
 
-iframe {
+video {
   margin: 20px 0px 20px 0px;
 }
 
-/* Make images rounded */
+/// Make images rounded ///
 .make-round {
   border-radius: 50%;
 }
 
-/* Images inserted through CSS */
+/// Images inserted through CSS ///
 #hero-image {
   background-image: url("../files/images/hero-image.jpg");
   background-color: $b-llgreen;
@@ -361,7 +365,7 @@ iframe {
   background-size: cover;
 }
 
-/* Embedded PDF */
+/// Embedded PDF ///
 #embed-brochure {
   position: relative;
   display: block;
@@ -370,8 +374,8 @@ iframe {
   overflow: hidden;
 }
 
-/*** BUTTONS ***/
-/* Default button styling */
+///** BUTTONS **///
+/// Default button styling ///
 .button {
   > a {
     background-color: $b_white-o;
@@ -418,7 +422,7 @@ iframe {
   }
 }
 
-/* Back to top button */
+/// Back to top button ///
 i {
   border: solid black;
   border-width: 0 3px 3px 0;
@@ -455,7 +459,7 @@ i {
   }
 }
 
-/*** FOOTER STYLING ***/
+///** FOOTER STYLING **///
 .footer-rows {
   width: 100%;
   display: flex;
@@ -481,7 +485,7 @@ i {
   }
 }
 
-/* Social icons */
+/// Social icons ///
 .social {
   > li {
     margin: 10px;
@@ -494,8 +498,8 @@ i {
   }
 }
 
-/*** MEDIA QUERIES ***/
-/* Mobile Styles */
+///** MEDIA QUERIES **///
+/// Mobile Styles ///
 @media only screen and (max-width: 420px) {
   .make-50p {
     width: 100%;
@@ -563,7 +567,7 @@ i {
   }
 }
 
-/* TABLET Style */
+/// TABLET Style ///
 @media only screen and (min-width: 421px) and (max-width: 960px) {
   .make-50p {
     width: 100%;
@@ -626,7 +630,7 @@ i {
   }
 }
 
-/* DESKTOP Style */
+// DESKTOP Style //
 @media only screen and (min-width: 961px) {
   .big-h1 {
     line-height: 1.2;
