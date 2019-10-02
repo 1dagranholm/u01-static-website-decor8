@@ -474,10 +474,8 @@ i {
   margin-right: 0px;
 }
 
+/* Mobile Styles */
 @media only screen and (max-width: 420px) {
-  .make-50p {
-    width: 100%;
-  }
   header {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -554,10 +552,8 @@ i {
   }
 }
 
+/* TABLET Style */
 @media only screen and (min-width: 421px) and (max-width: 960px) {
-  .make-50p {
-    width: 100%;
-  }
   header {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -625,6 +621,7 @@ i {
   }
 }
 
+/* DESKTOP Style */
 @media only screen and (min-width: 961px) {
   .big-h1 {
     line-height: 1.2;
