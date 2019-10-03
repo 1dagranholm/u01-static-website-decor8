@@ -77,7 +77,7 @@ body {
   line-height: 1.5;
   font-size: 10px;
   font-family: "Roboto", sans-serif;
-  background-color: #233c33;
+  background-color: #ffffff;
 }
 
 .page {
@@ -132,10 +132,6 @@ a {
 
 a:hover {
   color: #071712;
-}
-
-.topmenu-logo {
-  width: 300px;
 }
 
 .topmenu-links {
@@ -218,7 +214,7 @@ a:hover {
 }
 
 .lgreen-back {
-  background-color: #e1edf7;
+  background-color: #dcebe7;
 }
 
 .dgreen-back {
@@ -226,16 +222,12 @@ a:hover {
   color: #ffffff;
 }
 
-.lgrey-back {
-  background-color: #316553;
-}
-
 .orange-back {
   background-color: #f2bd85;
 }
 
 .lblue-back {
-  background-color: #e1edf7;
+  background-color: #dcebe7;
 }
 
 .blackgreen-back {
@@ -243,9 +235,9 @@ a:hover {
   color: #ffffff;
 }
 
-#top-section {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#0a1c16), to(#162822));
-  background-image: linear-gradient(#0a1c16, #162822);
+#gradient-back {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#233c33));
+  background-image: linear-gradient(#000000, #233c33);
 }
 
 .big-h1 {
@@ -309,6 +301,7 @@ video {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: 1;
 }
 
 #wall-back {
@@ -336,7 +329,6 @@ video {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 900;
   text-decoration: none;
@@ -350,7 +342,6 @@ video {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 900;
   text-decoration: none;
@@ -364,7 +355,6 @@ video {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 900;
   text-decoration: none;
@@ -636,7 +626,7 @@ i {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 800px;
+    height: 1000px;
   }
   .topmenu-logo {
     -webkit-box-pack: start;
