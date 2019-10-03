@@ -16,10 +16,10 @@ $c-llgreen: #93cdb9;
 $b_dgreen: #e8e8e8;
 
 /// White
-$b_blackgreen: #ffffff;
+$b_white: #ffffff;
 
 /// Light green
-$b_white: rgb(220, 235, 231);
+$b_lgreen: rgb(220, 235, 231);
 
 /// Dark green
 $b-dgreen: #233c33;
@@ -43,7 +43,7 @@ $b-llgreen: rgb(177, 232, 214);
 $b_dgreenblack: #091d17;
 
 /// White with opacity
-$b_white-o: rgba(255, 255, 255, 0.8);
+$b_white-o: rgba($b_white, .8);
 
 /// Green
 $b_green: #316553;
@@ -249,11 +249,11 @@ a {
 
 ///** COLOR PLATES **///
 .white-back {
-  background-color: $b_blackgreen;
+  background-color: $b_white;
 }
 
 .lgreen-back {
-  background-color: $b_white;
+  background-color: $b_lgreen;
 }
 
 .dgreen-back {
